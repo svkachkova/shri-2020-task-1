@@ -1,0 +1,11 @@
+.image {
+    width: 100%;
+    border: 3px solid var(--color-bg-border);
+    
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: var(--color-bg-default);
+
+    background-image: url(//assets/images/image-placeholder-primary.svg);
+    /* background-image: url(//assets/images/image-placeholder-inverse.svg); */
+}

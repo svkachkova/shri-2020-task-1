@@ -1,0 +1,50 @@
+.grid {
+    display: grid;
+}
+
+/* Number of columns */
+.grid_m-columns_10 {
+    grid-template-columns: repeat(10, 1fr);
+}
+.grid_m-columns_12 {
+    grid-template-columns: repeat(12, 1fr);
+}
+
+/* Column and row gap */
+.grid_col-gap_full {
+    column-gap: var(--gap);
+}
+.grid_col-gap_half {
+    column-gap: var(--gap-half);
+}
+.grid_col-gap_two-thirds {
+    column-gap: calc(2 * var(--gap) / 3);
+}
+
+.grid_row-gap_full {
+    row-gap: var(--gap);
+}
+.grid_row-gap_half {
+    row-gap: var(--gap-half);
+}
+
+/* Column element width */
+.grid__fraction_m-col_2 {
+    grid-column: span 2;
+}
+
+.grid__fraction_m-col_3 {
+    grid-column: span 3;
+}
+
+.grid__fraction_m-col_4 {
+    grid-column: span 4;
+}
+
+.grid__fraction_m-col_5 {
+    grid-column: span 5;
+}
+
+.grid__fraction_m-col_8 {
+    grid-column: span 8;
+}

@@ -1,0 +1,95 @@
+.theme * {
+    box-sizing: border-box;
+}
+
+/* Breakpoint */
+.theme_breakpoint_default { 
+    --screen: 1024px;
+}
+
+/* Background and text color */
+.theme_color_project-default {
+    --color-bg-default: #ffffff;
+    --color-bg-accent: #ffcc00;
+    --color-bg-border: #000000;
+
+    --color-text-primary: #000000;
+    --color-text-secondary: rgba(0, 0, 0, 0.6);
+    --color-text-ghost: rgba(0, 0, 0, 0.3);
+    --color-text-link: #0077ff;
+}
+
+.theme_color_project-brand {
+    --color-bg-default: #0077ff;
+    --color-bg-accent: #ffffff;
+    --color-bg-border: #ffffff;
+
+    --color-text-primary: #ffffff;
+    --color-text-secondary: rgba(255, 255, 255, 0.6);
+    --color-text-ghost: rgba(255, 255, 255, 0.3);
+    --color-text-link: #ffffff;
+}
+
+.theme_color_project-inverse {
+    --color-bg-default: #000000;
+    --color-bg-accent: #ffffff;
+    --color-bg-border: #ffffff;
+
+    --color-text-primary: #ffffff;
+    --color-text-secondary: rgba(255, 255, 255, 0.6);
+    --color-text-ghost: rgba(255, 255, 255, 0.3);
+    --color-text-link: #0077ff;
+}
+
+.theme_color_project-warning {
+    --color-bg-default: #ff3333;
+    --color-bg-accent: #ffffff;
+    --color-bg-border: #ff3333;
+
+    --color-text-primary: #ffffff;
+    --color-text-secondary: rgba(255, 255, 255, 0.6);
+    --color-text-ghost: rgba(255, 255, 255, 0.3);
+    --color-text-link: #ffffff;
+}
+
+/* Gap */
+.theme_gap_small {
+    --gap: var(--space-xl);
+    --gap-half: calc(var(--gap) / 2);
+}
+
+@media screen and (max-width: var(--screen)) {
+    .theme_gap_small {
+        --gap: var(--space-s);
+    }
+}
+
+/* Text size and line height */
+.theme_size_default {
+    --size-text-s: 8px;
+    --size-text-m: 10px;
+    --size-text-l: 11px;
+    --size-text-xl: 13px;
+    --size-text-xxl: 16px;
+
+    --line-height-s: 21px;
+    --line-height-m: 25px;
+    --line-height-l: 28px;
+    --line-height-xl: 34px;
+    --line-height-xxl: 38px;
+}
+
+/* Space */
+.theme_space_default {
+    --space-xxxs: 3px;
+    --space-xxs: 6px;
+    --space-xs: 9px;
+    --space-s: 15px;
+    --space-m: 18px;
+    --space-l: 24px;
+    --space-xl: 27px;
+    --space-xxl: 36px;
+    --space-xxxl: 45px;
+    --space-xxxxl: 51px;
+    --space-xxxxxl: 72px;
+}
