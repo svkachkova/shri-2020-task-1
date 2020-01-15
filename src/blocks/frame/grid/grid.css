@@ -6,6 +6,7 @@
 .grid_m-columns_10 {
     grid-template-columns: repeat(10, 1fr);
 }
+
 .grid_m-columns_12 {
     grid-template-columns: repeat(12, 1fr);
 }
@@ -14,9 +15,11 @@
 .grid_col-gap_full {
     column-gap: var(--gap);
 }
+
 .grid_col-gap_half {
     column-gap: var(--gap-half);
 }
+
 .grid_col-gap_two-thirds {
     column-gap: calc(2 * var(--gap) / 3);
 }
@@ -24,6 +27,7 @@
 .grid_row-gap_full {
     row-gap: var(--gap);
 }
+
 .grid_row-gap_half {
     row-gap: var(--gap-half);
 }

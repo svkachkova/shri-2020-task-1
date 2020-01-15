@@ -59,6 +59,7 @@
 }
 
 @media screen and (max-width: var(--screen)) {
+
     .theme_gap_small {
         --gap: var(--space-s);
     }
