@@ -1,6 +1,7 @@
 .icon-plus {
     display: flex;
-    flex: row wrap;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 
 .icon-plus_vertical-align_center {

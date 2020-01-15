@@ -1,10 +1,10 @@
 .layout__container {
     display: flex;
-    flex: column wrap;
+    flex-direction: column;
+    flex-wrap: wrap;
 }
 
 .layout__container_align_center {
-    /* text-align: center; */
     align-items: center;
 }
 

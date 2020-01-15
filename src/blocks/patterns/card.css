@@ -13,7 +13,8 @@
 /* Card content */
 .card__content {
     display: flex;
-    flex: column wrap;
+    flex-direction: column;
+    flex-wrap: wrap;
 }
 
 .card__content_distribute_center {

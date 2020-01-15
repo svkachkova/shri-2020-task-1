@@ -9,19 +9,21 @@
 /* Informer content */
 .informer__content {
     display: flex;
-    flex: row wrap;
+    flex-direction: column;
+    flex-wrap: wrap;
 }
 
 .informer__content_distribute_default {
-    justify-content: flex-start;
+    align-items: flex-start;
 }
 
 .informer__content_distribute_between {
-    justify-content: space-between;
+    align-content: space-between;
 }
 
 .informer__content_distribute_center {
-    justify-content: center;
+    align-items: center;
+    align-content: center;
 }
 
 /* Space around */

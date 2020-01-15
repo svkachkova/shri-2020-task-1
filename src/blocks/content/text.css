@@ -1,6 +1,7 @@
 .text {
     display: flex;
-    flex: row wrap;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 
 .text_align_center {
@@ -135,9 +136,4 @@
 .text_view_link .text__word {
     background-color: var(--color-text-link);
     cursor: pointer;
-}
-
-/* Word */
-.text__word:not(:last-child) {
-    margin-right: 3px;
 }
