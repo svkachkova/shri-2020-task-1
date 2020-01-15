@@ -5,15 +5,20 @@
     height: 32px;
 
     border: 2px solid var(--color-bg-border);
+    cursor: pointer;
 }
 
 .onoffswitch__button {
     position: absolute;
     top: 2px;
-    right: 2px;
+    left: 2px;
 
     width: 24px;
     height: 24px;
 
     background-color: var(--color-bg-border);
+}
+
+.onoffswitch_checked .onoffswitch__button {
+    left: 67px;
 }

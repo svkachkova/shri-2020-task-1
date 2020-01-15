@@ -8,13 +8,14 @@
 }
 
 .history__transaction {
-    padding-block-start: 0;
-    padding-block-end: 0;
+    cursor: pointer;
 }
 
 .history__show {
     width: 100%;
     justify-content: space-between;
+
+    margin-block-start: 0;
 }
 
 .history__details {
@@ -31,6 +32,14 @@
     top: 1px;
 }
 
+.history__hide {
+    display: none;
+}
+
 .history__info {
     margin-block-end: -6px;
+}
+
+.history__actions {
+    margin-block-end: 6px;
 }

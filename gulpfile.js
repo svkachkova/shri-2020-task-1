@@ -7,7 +7,7 @@ const dir = {
     build: './stub/build/' 
 };
 
-const { task, series, src, dest } = require('gulp');
+const { task, series, parallel, src, dest } = require('gulp');
 const autoprefixer = require('autoprefixer');
 const concat = require('gulp-concat');
 const csso = require('gulp-csso');
@@ -16,7 +16,7 @@ const plumber = require('gulp-plumber');
 const postcss = require('gulp-postcss');
 
 task('css', () => {
-    return src([dir.blocks + '**/*.css', dir.content + '*.css'], { sourcemaps: true })
+    return src([dir.blocks + '**/*.css', dir.content + '*.css', './src/page.css'])
         .pipe(plumber({
             errorHandler: err => {
                 console.log(err.message);
@@ -26,14 +26,26 @@ task('css', () => {
         .pipe(postcss([ autoprefixer() ]))
         .pipe(concat('style.css'))
         .pipe(csso())
-        .pipe(dest(dir.build), { sourcemaps: true });
+        .pipe(dest(dir.build));
 });
 
-task('copySVG', () => {
+task('js', () => {
+    return src(dir.content + '*.js')
+        .pipe(plumber({
+            errorHandler: err=> {
+            console.log(err.message);
+            this.emit('end');
+            }
+        }))
+        .pipe(concat('script.js'))
+        .pipe(dest(dir.build))
+});
+
+task('svg', () => {
     return src(dir.images + '*.svg')
-    .pipe(dest(dir.build + 'img/'));
+        .pipe(dest(dir.build + 'img/'));
 });
 
 task('clean', () => del(dir.build));
 
-task('default', series('clean', 'css', 'copySVG'));
+task('default', series('clean', parallel('css', 'js', 'svg')));
