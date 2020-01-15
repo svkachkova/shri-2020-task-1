@@ -1,0 +1,19 @@
+.onoffswitch {
+    position: relative;
+
+    width: 97px;
+    height: 32px;
+
+    border: 2px solid var(--color-bg-border);
+}
+
+.onoffswitch__button {
+    position: absolute;
+    top: 2px;
+    right: 2px;
+
+    width: 24px;
+    height: 24px;
+
+    background-color: var(--color-bg-border);
+}

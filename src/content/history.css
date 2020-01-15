@@ -1,0 +1,36 @@
+.history {
+    border: 3px solid var(--color-bg-border);
+}
+
+.history .text__word {
+    position: relative;
+    bottom: 1px;
+}
+
+.history__transaction {
+    padding-block-start: 0;
+    padding-block-end: 0;
+}
+
+.history__show {
+    width: 100%;
+    justify-content: space-between;
+}
+
+.history__details {
+    display: flex;
+    flex-direction: row;
+}
+
+.history__time {
+    align-self: center;
+}
+
+.history__time .text__word {
+    position: relative;
+    top: 1px;
+}
+
+.history__info {
+    margin-block-end: -6px;
+}

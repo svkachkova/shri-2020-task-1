@@ -1,0 +1,15 @@
+.footer {
+    padding-block-start: var(--space-xxxl);
+    padding-block-end: var(--space-xxxl);
+
+    padding-inline-start: var(--gap);
+    padding-inline-end: var(--gap);
+}
+
+.footer__content {
+    max-width: 1280px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}

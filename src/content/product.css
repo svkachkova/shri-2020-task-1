@@ -1,0 +1,13 @@
+.product {
+    min-height: 300px;
+    border: 3px solid var(--color-bg-border);
+}
+
+.product__image {
+    height: 160px;
+    width: 203px;
+}
+
+.product__image .image {
+    border-color: var(--color-bg-default);
+}

@@ -1,0 +1,17 @@
+.cover {
+    min-height: 472px;
+}
+
+.cover__info .text__word {
+    position: relative;
+    bottom: 3px;
+}
+
+.cover__preview {
+    height: 180px;
+    margin-block-end: var(--space-l);
+}
+
+.cover__footer {
+    width: 100%;
+}

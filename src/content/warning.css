@@ -1,0 +1,17 @@
+.warning {
+    min-height: 335px;
+}
+
+.warning .placeholder {
+    margin-block-start: var(--space-m);
+    margin-block-end: var(--space-m);
+}
+
+.warning__content {
+    margin-block-end: 5px;
+}
+
+.warning__content .text__word {
+    position: relative;
+    bottom: 2px;
+}
