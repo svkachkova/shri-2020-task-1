@@ -155,15 +155,11 @@
 }
 
 /* Form label */
-.form__label {
-    display: inline-block;
-}
-
 .form__label_width_default {
     width: 35%;
 }
 
 /* Form control */
 .form__control {
-    display: inline-block;
+    flex-grow: 1;
 }

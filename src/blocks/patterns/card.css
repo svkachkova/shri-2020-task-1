@@ -52,33 +52,34 @@
     bottom: 0;
 
     display: flex;
-    flex: row wrap;
+    flex-direction: column;
+    flex-wrap: wrap;
 }
 
 /* Distribute */
 .card__footer_distribute_between {
-    justify-content: space-between;
+    align-content: space-between;
 }
 
 .card__footer_distribute_center {
-    justify-content: center;
+    align-content: center;
 }
 
 .card__footer_distribute_right {
-    justify-content: flex-end;
+    align-content: flex-end;
 }
 
 /* Vertical-align */
 .card__footer_vertical-align_center {
-    align-items: center;
+    justify-content: center;
 }
 
 .card__footer_vertical-align_top {
-    align-items: flex-start;
+    justify-content: flex-start;
 }
 
 .card__footer_vertical-align_bottom {
-    align-items: flex-end;
+    justify-content: flex-end;
 }
 
 /* Space around */

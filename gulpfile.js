@@ -1,7 +1,9 @@
 'use strict';
 
 const dir = {
-    src: './src/blocks/',
+    blocks: './src/blocks/',
+    content: './src/content/',
+    images: './assets/images/',
     build: './stub/build/' 
 };
 
@@ -14,7 +16,7 @@ const plumber = require('gulp-plumber');
 const postcss = require('gulp-postcss');
 
 task('css', () => {
-    return src(dir.src + '**/*.css', { sourcemaps: true })
+    return src([dir.blocks + '**/*.css', dir.content + '*.css'], { sourcemaps: true })
         .pipe(plumber({
             errorHandler: err => {
                 console.log(err.message);
@@ -27,6 +29,11 @@ task('css', () => {
         .pipe(dest(dir.build), { sourcemaps: true });
 });
 
+task('copySVG', () => {
+    return src(dir.images + '*.svg')
+    .pipe(dest(dir.build + 'img/'));
+});
+
 task('clean', () => del(dir.build));
 
-task('default', series('clean', 'css'));
+task('default', series('clean', 'css', 'copySVG'));
