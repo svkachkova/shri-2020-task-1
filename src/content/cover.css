@@ -10,3 +10,10 @@
 .cover__footer {
     width: 100%;
 }
+
+@media screen and (max-width: 1024px) {
+
+    .cover {
+        margin-inline-end: calc(-4 * var(--gap));
+    }
+}

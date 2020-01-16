@@ -10,3 +10,10 @@
 .warning__content {
     margin-block-end: 5px;
 }
+
+@media screen and (max-width: 1024px) {
+
+    .warning {
+        margin-inline-end: calc(-4 * var(--gap));
+    }
+}
