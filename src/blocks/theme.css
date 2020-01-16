@@ -58,7 +58,7 @@
     --gap-half: calc(var(--gap) / 2);
 }
 
-@media screen and (max-width: var(--screen)) {
+@media screen and (max-width: 1024px) {
 
     .theme_gap_small {
         --gap: var(--space-s);

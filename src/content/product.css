@@ -3,9 +3,12 @@
     border: 3px solid var(--color-bg-border);
 }
 
+.product__title {
+    margin-block-end: var(--space-xxxl);
+}
+
 .product__image {
     height: 160px;
-    width: 203px;
 }
 
 .product__image .image {

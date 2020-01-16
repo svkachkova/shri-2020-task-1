@@ -1,3 +1,7 @@
+.section {
+    background-color: var(--color-bg-default);
+}
+
 .section_indent-b_xxl {
     margin-block-end: var(--space-xxl); 
 }
