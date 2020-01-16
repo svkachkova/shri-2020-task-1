@@ -34,11 +34,6 @@ task('js', () => {
         .pipe(dest(dir.build))
 });
 
-task('svg', () => {
-    return src(dir.images + '*.svg')
-        .pipe(dest(dir.build + 'img/'));
-});
-
 task('clean', () => del(dir.build));
 
-task('default', series('clean', parallel('css', 'js', 'svg')));
+task('default', series('clean', parallel('css', 'js')));
