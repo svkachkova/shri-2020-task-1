@@ -1,5 +1,10 @@
 .warning {
     min-height: 335px;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .warning .placeholder {
@@ -7,14 +12,9 @@
     margin-block-end: var(--space-m);
 }
 
-.warning__button-wrapper {
-    margin-top: 5px;
-}
-
 @media screen and (max-width: 1024px) {
 
     .warning {
-        min-height: 316px;
         margin-inline-end: calc(-4 * var(--gap));
     }
 }
