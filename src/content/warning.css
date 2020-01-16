@@ -7,13 +7,14 @@
     margin-block-end: var(--space-m);
 }
 
-.warning__content {
-    margin-block-end: 5px;
+.warning__button-wrapper {
+    margin-top: 5px;
 }
 
 @media screen and (max-width: 1024px) {
 
     .warning {
+        min-height: 316px;
         margin-inline-end: calc(-4 * var(--gap));
     }
 }
