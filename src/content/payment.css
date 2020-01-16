@@ -2,11 +2,6 @@
     border: 3px solid var(--color-bg-border);
 }
 
-.payment__header .text__word {
-    position: relative;
-    bottom: 3px;
-}
-
 .payment__content {
     display: flex;
     flex-direction: column;

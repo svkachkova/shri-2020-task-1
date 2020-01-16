@@ -27,19 +27,6 @@
     align-self: center;
 }
 
-.history__time .text__word {
-    position: relative;
-    top: 1px;
-}
-
 .history__hide {
     display: none;
-}
-
-.history__info {
-    margin-block-end: -6px;
-}
-
-.history__actions {
-    margin-block-end: 6px;
 }

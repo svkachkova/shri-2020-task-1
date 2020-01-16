@@ -10,8 +10,3 @@
 .warning__content {
     margin-block-end: 5px;
 }
-
-.warning__content .text__word {
-    position: relative;
-    bottom: 2px;
-}

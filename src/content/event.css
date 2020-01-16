@@ -16,21 +16,6 @@
     margin-block-end: var(--space-s);
 }
 
-.event__title .text__word {
-    position: relative;
-    bottom: 3px;
-}
-
-.event__description .text__word {
-    position: relative;
-    bottom: 1px;
-}
-
 .event__footer {
     width: 100%;
-}
-
-.event__footer .text__word {
-    position: relative;
-    bottom: 2px;
 }

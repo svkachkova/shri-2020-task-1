@@ -23,8 +23,8 @@
 
 .text_size_s .text__word {
     height: var(--size-text-s);
-    margin-block-start: calc((var(--line-height-s) - var(--size-text-s)) / 2);
-    margin-block-end: calc((var(--line-height-s) - var(--size-text-s)) / 2);
+    margin-block-start: 8px;
+    margin-block-end: 5px;
 }
 
 /* Size m */
@@ -42,8 +42,8 @@
 
 .text_size_m .text__word {
     height: var(--size-text-m);
-    margin-block-start: calc((var(--line-height-m) - var(--size-text-m)) / 2);
-    margin-block-end: calc((var(--line-height-m) - var(--size-text-m)) / 2);
+    margin-block-start: 8px;
+    margin-block-end: 7px;
 }
 
 /* Size l */
@@ -61,8 +61,8 @@
 
 .text_size_l .text__word {
     height: var(--size-text-l);
-    margin-block-start: calc((var(--line-height-l) - var(--size-text-l)) / 2);
-    margin-block-end: calc((var(--line-height-l) - var(--size-text-l)) / 2);
+    margin-block-start: 8px;
+    margin-block-end: 9px;
 }
 
 /* Size xl */
@@ -80,8 +80,8 @@
 
 .text_size_xl .text__word {
     height: var(--size-text-xl);
-    margin-block-start: calc((var(--line-height-xl) - var(--size-text-xl)) / 2);
-    margin-block-end: calc((var(--line-height-xl) - var(--size-text-xl)) / 2);
+    margin-block-start: 9px;
+    margin-block-end: 12px;
 }
 
 /* Size xxl */
@@ -99,8 +99,8 @@
 
 .text_size_xxl .text__word {
     height: var(--size-text-xxl);
-    margin-block-start: calc((var(--line-height-xxl) - var(--size-text-xxl)) / 2);
-    margin-block-end: calc((var(--line-height-xxl) - var(--size-text-xxl)) / 2);
+    margin-block-start: 8px;
+    margin-block-end: 14px;
 }
 
 /* Type */
