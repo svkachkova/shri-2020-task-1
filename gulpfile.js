@@ -30,14 +30,7 @@ task('css', () => {
 });
 
 task('js', () => {
-    return src(dir.content + '*.js')
-        .pipe(plumber({
-            errorHandler: err=> {
-            console.log(err.message);
-            this.emit('end');
-            }
-        }))
-        .pipe(concat('script.js'))
+    return src('./src/script.js')
         .pipe(dest(dir.build))
 });
 
