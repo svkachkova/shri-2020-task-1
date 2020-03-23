@@ -15,23 +15,15 @@ function historyHandler(event) {
 }
 
 function onoffswitchHandler(event) {
-    const target = event.target;
+    const onoffswitch = event.target.closest('.onoffswitch');
 
-    if (target.matches('.onoffswitch') || target.matches('.onoffswitch__button')) {
+    if (onoffswitch) {
 
-        const defaultThemes = [...document.querySelectorAll('.theme_color_project-default')];
-        const inverseThemes = [...document.querySelectorAll('.theme_color_project-inverse')];
-        
-        const onoffswitch = document.querySelector('.onoffswitch');
-
-        defaultThemes.map(defaultTheme => {
-            defaultTheme.classList.remove('theme_color_project-default');
-            defaultTheme.classList.add('theme_color_project-inverse');
-        });
-        
-        inverseThemes.map(inverseTheme => {
-            inverseTheme.classList.remove('theme_color_project-inverse');
-            inverseTheme.classList.add('theme_color_project-default');
+        const themeBlocks = [...document.querySelectorAll('.theme_color_project-default, .theme_color_project-inverse')];
+    
+        themeBlocks.map(themeBlock => {
+            themeBlock.classList.toggle('theme_color_project-default');
+            themeBlock.classList.toggle('theme_color_project-inverse');
         });
         
         onoffswitch.classList.toggle('onoffswitch_checked');
